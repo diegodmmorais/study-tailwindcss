@@ -1,0 +1,50 @@
+@tailwind components;
+@layer components {
+  .btn-default {
+    @apply m-1 rounded bg-gray-200 p-2;
+  }
+
+  .btn-default:active {
+    @apply active:bg-gray-500 active:text-gray-100;
+  }
+
+  .btn-default:hover {
+    @apply hover:bg-gray-300;
+  }
+
+  .btn-red {
+    @apply m-1 rounded bg-red-300 p-2;
+  }
+
+  .btn-red:hover {
+    @apply hover:bg-red-400;
+  }
+
+  .btn-red:active {
+    @apply active:bg-red-500 active:text-gray-100;
+  }
+
+  .btn-greem {
+    @apply m-1 rounded bg-green-300 p-2;
+  }
+
+  .btn-greem:hover {
+    @apply hover:bg-green-400;
+  }
+
+  .btn-greem:active {
+    @apply active:bg-green-500 active:text-gray-100;
+  }
+
+  .btn-container-rigth {
+    @apply flex justify-end bg-cyan-500 p-2;
+  }
+
+  .btn-container-center{
+    @apply flex justify-center bg-cyan-500 p-2;
+  }
+
+  .btn-container{
+    @apply bg-cyan-500 p-2;
+  }
+}
