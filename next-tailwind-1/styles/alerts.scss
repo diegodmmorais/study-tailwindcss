@@ -1,6 +1,14 @@
 @tailwind components;
 @layer components {
+  %alert {
+    @apply container mx-auto my-2 rounded border-2;
+  }
+
   .alert-cyan {
-    @apply container mx-auto my-2 rounded border-2 border-cyan-800 bg-cyan-500 p-5 text-white;
+    @extend %alert;
+    @apply border-cyan-800 bg-cyan-500 p-5 text-white;
+    &-t  {
+      @apply bg-gradient-to-l from-cyan-800 to-fuchsia-500 p-5 text-white md:bg-gradient-to-l md:to-cyan-800 md:from-fuchsia-500;
+    }
   }
 }
