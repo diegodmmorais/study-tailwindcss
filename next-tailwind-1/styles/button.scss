@@ -1,0 +1,50 @@
+@tailwind components;
+@layer components {
+  /* criando um selector principal btn */
+  %btn {
+    @apply m-1 rounded p-2;
+  }
+
+  .btn-default {
+    @extend %btn;
+    @apply bg-gray-200;
+    &:active {
+      @apply active:bg-gray-500 active:text-gray-100;
+    }
+    &:hover {
+      @apply hover:bg-gray-300;
+    }
+  }
+
+  .btn-red {
+    @extend %btn;
+    @apply bg-red-300;
+    &:active {
+      @apply active:bg-red-500 active:text-gray-100;
+    }
+    &:hover {
+      @apply hover:bg-red-400;
+    }
+  }
+
+  .btn-greem {
+    @extend %btn;
+    @apply bg-green-300;
+    &:active {
+      @apply active:bg-green-500 active:text-gray-100;
+    }
+    &:hover {
+      @apply hover:bg-green-400;
+    }
+  }
+
+  .btn-container {
+    @apply flex bg-cyan-500 p-2;
+    &-rigth {
+      @apply justify-end;
+    }
+    &-center {
+      @apply justify-center;
+    }
+  }
+}
